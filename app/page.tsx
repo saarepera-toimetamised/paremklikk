@@ -3,39 +3,39 @@
 import { useState } from 'react';
 
 const outlets = [
-  { name: 'BBC News', category: 'news' },
-  { name: 'The Guardian', category: 'news' },
-  { name: 'CNN', category: 'news' },
-  { name: 'Al Jazeera', category: 'news' },
-  { name: 'Reuters', category: 'news' },
-  { name: 'Associated Press', category: 'news' },
-  { name: 'France 24', category: 'news' },
-  { name: 'Deutsche Welle', category: 'news' },
-  { name: 'NPR', category: 'news' },
-  { name: 'Politico', category: 'politics' },
-  { name: 'Foreign Affairs', category: 'politics' },
-  { name: 'The Economist', category: 'politics' },
-  { name: 'Financial Times', category: 'business' },
-  { name: 'Bloomberg', category: 'business' },
-  { name: 'Wall Street Journal', category: 'business' },
-  { name: 'Forbes', category: 'business' },
-  { name: 'TechCrunch', category: 'tech' },
-  { name: 'The Verge', category: 'tech' },
-  { name: 'Wired', category: 'tech' },
-  { name: 'Ars Technica', category: 'tech' },
-  { name: 'Nature', category: 'science' },
-  { name: 'Science', category: 'science' },
-  { name: 'Scientific American', category: 'science' },
-  { name: 'New Scientist', category: 'science' },
-  { name: 'ESPN', category: 'sports' },
-  { name: 'The Athletic', category: 'sports' },
-  { name: 'Sky Sports', category: 'sports' },
-  { name: 'Variety', category: 'culture' },
-  { name: 'Rolling Stone', category: 'culture' },
-  { name: 'Pitchfork', category: 'culture' },
-  { name: 'The Atlantic', category: 'culture' },
-  { name: 'New Yorker', category: 'culture' },
-  { name: 'Vox', category: 'opinion' },
+  { name: 'BBC News', category: 'news', url: 'https://www.bbc.com/news' },
+  { name: 'The Guardian', category: 'news', url: 'https://www.theguardian.com/international' },
+  { name: 'CNN', category: 'news', url: 'https://www.cnn.com' },
+  { name: 'Al Jazeera', category: 'news', url: 'https://www.aljazeera.com' },
+  { name: 'Reuters', category: 'news', url: 'https://www.reuters.com' },
+  { name: 'Associated Press', category: 'news', url: 'https://apnews.com' },
+  { name: 'France 24', category: 'news', url: 'https://www.france24.com/en/' },
+  { name: 'Deutsche Welle', category: 'news', url: 'https://www.dw.com/en/top-stories/s-9097' },
+  { name: 'NPR', category: 'news', url: 'https://www.npr.org/sections/news/' },
+  { name: 'Politico', category: 'politics', url: 'https://www.politico.com' },
+  { name: 'Foreign Affairs', category: 'politics', url: 'https://www.foreignaffairs.com' },
+  { name: 'The Economist', category: 'politics', url: 'https://www.economist.com' },
+  { name: 'Financial Times', category: 'business', url: 'https://www.ft.com' },
+  { name: 'Bloomberg', category: 'business', url: 'https://www.bloomberg.com' },
+  { name: 'Wall Street Journal', category: 'business', url: 'https://www.wsj.com' },
+  { name: 'Forbes', category: 'business', url: 'https://www.forbes.com' },
+  { name: 'TechCrunch', category: 'tech', url: 'https://techcrunch.com' },
+  { name: 'The Verge', category: 'tech', url: 'https://www.theverge.com' },
+  { name: 'Wired', category: 'tech', url: 'https://www.wired.com' },
+  { name: 'Ars Technica', category: 'tech', url: 'https://arstechnica.com' },
+  { name: 'Nature', category: 'science', url: 'https://www.nature.com' },
+  { name: 'Science', category: 'science', url: 'https://www.science.org' },
+  { name: 'Scientific American', category: 'science', url: 'https://www.scientificamerican.com' },
+  { name: 'New Scientist', category: 'science', url: 'https://www.newscientist.com' },
+  { name: 'ESPN', category: 'sports', url: 'https://www.espn.com' },
+  { name: 'The Athletic', category: 'sports', url: 'https://theathletic.com' },
+  { name: 'Sky Sports', category: 'sports', url: 'https://www.skysports.com' },
+  { name: 'Variety', category: 'culture', url: 'https://variety.com' },
+  { name: 'Rolling Stone', category: 'culture', url: 'https://www.rollingstone.com' },
+  { name: 'Pitchfork', category: 'culture', url: 'https://pitchfork.com' },
+  { name: 'The Atlantic', category: 'culture', url: 'https://www.theatlantic.com' },
+  { name: 'New Yorker', category: 'culture', url: 'https://www.newyorker.com' },
+  { name: 'Vox', category: 'opinion', url: 'https://www.vox.com' },
 ];
 
 const categories = [
@@ -59,7 +59,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white font-mono">
-      {/* Header */}
       <header className="border-b-4 border-black">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <h1 className="text-5xl font-bold text-black tracking-tight">
@@ -74,7 +73,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Category Filters */}
       <div className="border-b-4 border-black bg-white">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex gap-3 overflow-x-auto">
@@ -95,13 +93,15 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Outlets Grid */}
       <main className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredOutlets.map((outlet) => (
-            <div
+            <a
               key={outlet.name}
-              className="border-3 border-black p-5 bg-white hover:bg-gray-50 transition-all cursor-pointer"
+              href={outlet.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-3 border-black p-5 bg-white hover:bg-gray-50 transition-all cursor-pointer block"
               style={{ borderWidth: '3px' }}
             >
               <h3 className="text-xl font-bold text-black uppercase tracking-tight">
@@ -110,16 +110,13 @@ export default function Home() {
               <p className="text-sm text-gray-700 mt-2 uppercase tracking-wide">
                 [{categories.find(c => c.id === outlet.category)?.label}]
               </p>
-            </div>
+            </a>
           ))}
         </div>
       </main>
 
-      {/* Footer - Instructions */}
       <footer className="border-t-4 border-black bg-white mt-16">
         <div className="max-w-7xl mx-auto px-4 py-8">
-          
-          {/* Main Instructions Box */}
           <div className="border-3 border-black p-6 mb-6" style={{ borderWidth: '3px' }}>
             <h3 className="text-2xl font-bold text-black mb-4 uppercase">
               Kuidas kasutada:
@@ -131,7 +128,6 @@ export default function Home() {
               <li>• Maksumüür → saate iga kuu lugeda piiratud arvu artikleid täies mahus ilma tellimuseta</li>
             </ul>
 
-            {/* Warning */}
             <div className="mt-4 border-2 border-black p-4 bg-gray-50">
               <p className="text-sm text-black">
                 <strong>⚠ MASINTÕLGE VÕTAB 5-15 SEKUNDIT:</strong> Google Translate peab lehe esmalt laadima ja tõlkima. Ole kannatlik! Vana arvuti võib olla aeglasem, aga töötab ikka.
@@ -139,7 +135,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Google Translate Performance Box */}
           <div className="border-3 border-black p-6 mb-6" style={{ borderWidth: '3px' }}>
             <h3 className="text-xl font-bold text-black mb-4 uppercase border-b-2 border-black pb-2">
               SULGE LISAINFO
@@ -166,21 +161,18 @@ export default function Home() {
               </div>
             </div>
 
-            {/* See muutub pidevalt box */}
             <div className="mt-4 border-2 border-black p-3 bg-gray-50">
               <p className="text-sm text-black">
                 <strong>⚙ SEE MUUTUB PIDEVALT:</strong> Väljaanded muudavad oma süsteeme päevade ja nädalatega. See, mis täna blokeerib, võib homme töötada ja vastupidi.
               </p>
             </div>
 
-            {/* Chrome Instructions */}
             <div className="mt-6 pt-4 border-t-2 border-black">
               <p className="text-sm text-black">
                 <strong>💡 NIPP CHROME'I BRAUSERIS:</strong> Kui Google Translate automaatselt ei tööta, proovi brauseri sisseehitatud tõlget: parema hiireklahviga klõps lehel → "Tõlgi eesti keelde" või klõpsa paremal üleval kolme täppi ja vali rippmenüüst "Translate/tõlgi" → eesti keel.
               </p>
             </div>
           </div>
-
         </div>
       </footer>
     </div>
