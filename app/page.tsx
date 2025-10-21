@@ -61,7 +61,9 @@ export default function Home() {
     <div className="min-h-screen bg-white font-mono">
       <header className="border-b-4 border-black">
         <div className="max-w-7xl mx-auto px-4 py-6">
-          <h1 className="text-5xl font-bold text-black tracking-tight">
+          <h1 className="text-5xl font-bold text-black tracking-tight  flex items-center gap-3 flex-wrap">
+            <img src="/mu_logo_1024.png" alt="MU logo" className="w-12 h-12 object-contain" />
+
             PAREMKLIKK
           </h1>
           <p className="text-lg text-black mt-2">
