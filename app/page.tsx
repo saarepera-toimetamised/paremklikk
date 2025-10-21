@@ -68,7 +68,7 @@ export default function Home() {
             Maailmauudised eesti keeles
           </p>
           <p className="text-sm text-gray-700 mt-1 border-t border-black pt-2">
-            Vabadus saada emakeelset infot reaalajas ühest kohast ja omal valikul → peab leppima toimetamata masintõlkega
+            Vabadus saada emakeelset infot reaalajas ühest kohast ja omal valikul → peab leppima toimetamata masintõlkega → loe ja telli, mida tahad.
           </p>
         </div>
       </header>
