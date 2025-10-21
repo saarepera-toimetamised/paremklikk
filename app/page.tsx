@@ -36,7 +36,8 @@ const outlets = [
   // Politics
   { name: 'Politico', category: 'politics', url: 'https://www.politico.com' },
   { name: 'Foreign Affairs', category: 'politics', url: 'https://www.foreignaffairs.com' },
-  { name: 'The Economist', category: 'politics', url: 'https://www.economist.com' },
+  { name: 'The Kyiv Independent', category: 'politics', url: 'https://kyivindependent.com' },
+  { name: 'Suspilne Novyny', category: 'politics', url: 'https://suspilne.media' },
   // Business
   { name: 'Financial Times', category: 'business', url: 'https://www.ft.com' },
   { name: 'Bloomberg', category: 'business', url: 'https://www.bloomberg.com' },
