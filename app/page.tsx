@@ -266,7 +266,7 @@ export default function Home() {
 
           <div className="border-3 border-black p-6 mb-6" style={{ borderWidth: '3px' }}>
             <h3 className="text-xl font-bold text-black mb-4 uppercase border-b-2 border-black pb-2">
-              SULGE LISAINFO
+              KASULIK TEADA
             </h3>
             
             <h4 className="text-lg font-bold text-black mb-3">
