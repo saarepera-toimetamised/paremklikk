@@ -314,7 +314,7 @@ export default function Home() {
                 2. Parem-klikk lehel → vali «Tõlgi eesti keelde»
               </p>
               <p className="text-sm text-black mb-3">
-                VÕI klõpsa paremal üleval kolme täppi → «Translate/Tõlgi» → vali eesti keel
+                VÕI klõpsa paremal üleval/mobiiltelefonis all kolme täppi → «Translate/Tõlgi» → vali eesti keel
               </p>
               <p className="text-sm text-black mb-3">
                 <strong>SAFARI:</strong><br />
