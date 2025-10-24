@@ -119,7 +119,7 @@ export default function Home() {
   });
 
   return (
-    <div className="min-h-screen bg-white font-mono">
+    <div className="min-h-screen bg-white font-mono pb-24">
       <header className="border-b-4 border-black">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <h1 className="text-5xl font-bold text-black tracking-tight flex items-center gap-3 flex-wrap">
