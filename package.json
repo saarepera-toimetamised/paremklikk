@@ -7,7 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "pages": "next build && next export"
+    "pages": "next build"
   },
   "dependencies": {
     "next": "15.5.6",
