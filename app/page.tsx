@@ -19,65 +19,181 @@ const outlets = [
   { name: 'Tempo', category: 'news', url: 'https://en.tempo.co', language: 'English', languageLocal: 'inglise', countryCode: 'ID' },
   { name: 'ABC News AU', category: 'news', url: 'https://www.abc.net.au/news', language: 'English', languageLocal: 'inglise', countryCode: 'AU' },
   { name: 'NZ Herald', category: 'news', url: 'https://www.nzherald.co.nz', language: 'English', languageLocal: 'inglise', countryCode: 'NZ' },
-  // News - Arabic
-  { name: 'Al Jazeera', category: 'news', url: 'https://www.aljazeera.com', language: 'العربية', languageLocal: 'araabia', countryCode: 'QA' },
-  // News - French
-  { name: 'France 24', category: 'news', url: 'https://www.france24.com/en/', language: 'Français', languageLocal: 'prantsuse', countryCode: 'FR' },
-  // News - German
-  { name: 'Deutsche Welle', category: 'news', url: 'https://www.dw.com/en/top-stories/s-9097', language: 'Deutsch', languageLocal: 'saksa', countryCode: 'DE' },
-  // News - Finnish
-  { name: 'Yle Uutiset', category: 'news', url: 'https://yle.fi/uutiset', language: 'Suomi', languageLocal: 'soome', countryCode: 'FI' },
-  // News - Swedish
+  
+  // News - German (Deutsch)
+  { name: 'Der Spiegel', category: 'news', url: 'https://www.spiegel.de', language: 'Deutsch', languageLocal: 'saksa', countryCode: 'DE' },
+  { name: 'Die Zeit', category: 'news', url: 'https://www.zeit.de', language: 'Deutsch', languageLocal: 'saksa', countryCode: 'DE' },
+  { name: 'Süddeutsche Zeitung', category: 'news', url: 'https://www.sueddeutsche.de', language: 'Deutsch', languageLocal: 'saksa', countryCode: 'DE' },
+  { name: 'Frankfurter Allgemeine', category: 'news', url: 'https://www.faz.net', language: 'Deutsch', languageLocal: 'saksa', countryCode: 'DE' },
+  { name: 'Tagesschau', category: 'news', url: 'https://www.tagesschau.de', language: 'Deutsch', languageLocal: 'saksa', countryCode: 'DE' },
+  { name: 'Die Welt', category: 'news', url: 'https://www.welt.de', language: 'Deutsch', languageLocal: 'saksa', countryCode: 'DE' },
+  { name: 'Handelsblatt', category: 'business', url: 'https://www.handelsblatt.com', language: 'Deutsch', languageLocal: 'saksa', countryCode: 'DE' },
+  { name: 'Bild', category: 'news', url: 'https://www.bild.de', language: 'Deutsch', languageLocal: 'saksa', countryCode: 'DE' },
+  { name: 'Deutsche Welle', category: 'news', url: 'https://www.dw.com/de', language: 'Deutsch', languageLocal: 'saksa', countryCode: 'DE' },
+  { name: 'Tagesspiegel', category: 'news', url: 'https://www.tagesspiegel.de', language: 'Deutsch', languageLocal: 'saksa', countryCode: 'DE' },
+  
+  // News - French (Français)
+  { name: 'Le Monde', category: 'news', url: 'https://www.lemonde.fr', language: 'Français', languageLocal: 'prantsuse', countryCode: 'FR' },
+  { name: 'Le Figaro', category: 'news', url: 'https://www.lefigaro.fr', language: 'Français', languageLocal: 'prantsuse', countryCode: 'FR' },
+  { name: 'Libération', category: 'news', url: 'https://www.liberation.fr', language: 'Français', languageLocal: 'prantsuse', countryCode: 'FR' },
+  { name: 'France 24', category: 'news', url: 'https://www.france24.com/fr/', language: 'Français', languageLocal: 'prantsuse', countryCode: 'FR' },
+  { name: "L'Express", category: 'news', url: 'https://www.lexpress.fr', language: 'Français', languageLocal: 'prantsuse', countryCode: 'FR' },
+  { name: 'Le Parisien', category: 'news', url: 'https://www.leparisien.fr', language: 'Français', languageLocal: 'prantsuse', countryCode: 'FR' },
+  { name: 'Mediapart', category: 'news', url: 'https://www.mediapart.fr', language: 'Français', languageLocal: 'prantsuse', countryCode: 'FR' },
+  { name: 'Les Échos', category: 'business', url: 'https://www.lesechos.fr', language: 'Français', languageLocal: 'prantsuse', countryCode: 'FR' },
+  { name: 'RFI', category: 'news', url: 'https://www.rfi.fr', language: 'Français', languageLocal: 'prantsuse', countryCode: 'FR' },
+  { name: 'Le Point', category: 'news', url: 'https://www.lepoint.fr', language: 'Français', languageLocal: 'prantsuse', countryCode: 'FR' },
+  
+  // News - Spanish (Español)
+  { name: 'El País', category: 'news', url: 'https://elpais.com', language: 'Español', languageLocal: 'hispaania', countryCode: 'ES' },
+  { name: 'El Mundo', category: 'news', url: 'https://www.elmundo.es', language: 'Español', languageLocal: 'hispaania', countryCode: 'ES' },
+  { name: 'ABC España', category: 'news', url: 'https://www.abc.es', language: 'Español', languageLocal: 'hispaania', countryCode: 'ES' },
+  { name: 'La Vanguardia', category: 'news', url: 'https://www.lavanguardia.com', language: 'Español', languageLocal: 'hispaania', countryCode: 'ES' },
+  { name: 'El Periódico', category: 'news', url: 'https://www.elperiodico.com', language: 'Español', languageLocal: 'hispaania', countryCode: 'ES' },
+  { name: 'La Nación', category: 'news', url: 'https://www.lanacion.com.ar', language: 'Español', languageLocal: 'hispaania', countryCode: 'AR' },
+  { name: 'Clarín', category: 'news', url: 'https://www.clarin.com', language: 'Español', languageLocal: 'hispaania', countryCode: 'AR' },
+  { name: 'El Universal', category: 'news', url: 'https://www.eluniversal.com.mx', language: 'Español', languageLocal: 'hispaania', countryCode: 'MX' },
+  { name: 'Reforma', category: 'news', url: 'https://www.reforma.com', language: 'Español', languageLocal: 'hispaania', countryCode: 'MX' },
+  { name: 'El Tiempo', category: 'news', url: 'https://www.eltiempo.com', language: 'Español', languageLocal: 'hispaania', countryCode: 'CO' },
+  
+  // News - Italian (Italiano)
+  { name: 'La Repubblica', category: 'news', url: 'https://www.repubblica.it', language: 'Italiano', languageLocal: 'itaalia', countryCode: 'IT' },
+  { name: 'Corriere della Sera', category: 'news', url: 'https://www.corriere.it', language: 'Italiano', languageLocal: 'itaalia', countryCode: 'IT' },
+  { name: 'La Stampa', category: 'news', url: 'https://www.lastampa.it', language: 'Italiano', languageLocal: 'itaalia', countryCode: 'IT' },
+  { name: 'Il Sole 24 Ore', category: 'business', url: 'https://www.ilsole24ore.com', language: 'Italiano', languageLocal: 'itaalia', countryCode: 'IT' },
+  { name: 'Il Messaggero', category: 'news', url: 'https://www.ilmessaggero.it', language: 'Italiano', languageLocal: 'itaalia', countryCode: 'IT' },
+  { name: 'Il Fatto Quotidiano', category: 'news', url: 'https://www.ilfattoquotidiano.it', language: 'Italiano', languageLocal: 'itaalia', countryCode: 'IT' },
+  { name: 'ANSA', category: 'news', url: 'https://www.ansa.it', language: 'Italiano', languageLocal: 'itaalia', countryCode: 'IT' },
+  
+  // News - Swedish (Svenska)
+  { name: 'Dagens Nyheter', category: 'news', url: 'https://www.dn.se', language: 'Svenska', languageLocal: 'rootsi', countryCode: 'SE' },
+  { name: 'Svenska Dagbladet', category: 'news', url: 'https://www.svd.se', language: 'Svenska', languageLocal: 'rootsi', countryCode: 'SE' },
   { name: 'Aftonbladet', category: 'news', url: 'https://www.aftonbladet.se', language: 'Svenska', languageLocal: 'rootsi', countryCode: 'SE' },
-  // News - Danish
-  { name: 'DR Nyheder', category: 'news', url: 'https://www.dr.dk/nyheder', language: 'Dansk', languageLocal: 'taani', countryCode: 'DK' },
-  // News - Norwegian
+  { name: 'Expressen', category: 'news', url: 'https://www.expressen.se', language: 'Svenska', languageLocal: 'rootsi', countryCode: 'SE' },
+  { name: 'Göteborgs-Posten', category: 'news', url: 'https://www.gp.se', language: 'Svenska', languageLocal: 'rootsi', countryCode: 'SE' },
+  { name: 'Sydsvenskan', category: 'news', url: 'https://www.sydsvenskan.se', language: 'Svenska', languageLocal: 'rootsi', countryCode: 'SE' },
+  { name: 'Dagens Industri', category: 'business', url: 'https://www.di.se', language: 'Svenska', languageLocal: 'rootsi', countryCode: 'SE' },
+  
+  // News - Norwegian (Norsk)
+  { name: 'Aftenposten', category: 'news', url: 'https://www.aftenposten.no', language: 'Norsk', languageLocal: 'norra', countryCode: 'NO' },
+  { name: 'VG', category: 'news', url: 'https://www.vg.no', language: 'Norsk', languageLocal: 'norra', countryCode: 'NO' },
   { name: 'NRK', category: 'news', url: 'https://www.nrk.no', language: 'Norsk', languageLocal: 'norra', countryCode: 'NO' },
-  // News - Icelandic
-  { name: 'RÚV', category: 'news', url: 'https://www.ruv.is/frett', language: 'Íslenska', languageLocal: 'islandi', countryCode: 'IS' },
-  // News - Latvian
-  { name: 'Neatkarīgā', category: 'news', url: 'https://neatkariga.nra.lv', language: 'Latviešu', languageLocal: 'läti', countryCode: 'LV' },
-  // News - Lithuanian
-  { name: '15min', category: 'news', url: 'https://www.15min.lt', language: 'Lietuvių', languageLocal: 'leedu', countryCode: 'LT' },
-  // News - Polish
+  { name: 'Dagbladet', category: 'news', url: 'https://www.dagbladet.no', language: 'Norsk', languageLocal: 'norra', countryCode: 'NO' },
+  { name: 'Dagens Næringsliv', category: 'business', url: 'https://www.dn.no', language: 'Norsk', languageLocal: 'norra', countryCode: 'NO' },
+  { name: 'Bergens Tidende', category: 'news', url: 'https://www.bt.no', language: 'Norsk', languageLocal: 'norra', countryCode: 'NO' },
+  
+  // News - Danish (Dansk)
+  { name: 'Politiken', category: 'news', url: 'https://politiken.dk', language: 'Dansk', languageLocal: 'taani', countryCode: 'DK' },
+  { name: 'DR Nyheder', category: 'news', url: 'https://www.dr.dk/nyheder', language: 'Dansk', languageLocal: 'taani', countryCode: 'DK' },
+  { name: 'Berlingske', category: 'news', url: 'https://www.berlingske.dk', language: 'Dansk', languageLocal: 'taani', countryCode: 'DK' },
+  { name: 'Jyllands-Posten', category: 'news', url: 'https://jyllands-posten.dk', language: 'Dansk', languageLocal: 'taani', countryCode: 'DK' },
+  { name: 'Ekstra Bladet', category: 'news', url: 'https://ekstrabladet.dk', language: 'Dansk', languageLocal: 'taani', countryCode: 'DK' },
+  { name: 'BT', category: 'news', url: 'https://www.bt.dk', language: 'Dansk', languageLocal: 'taani', countryCode: 'DK' },
+  
+  // News - Finnish (Suomi)
+  { name: 'Helsingin Sanomat', category: 'news', url: 'https://www.hs.fi', language: 'Suomi', languageLocal: 'soome', countryCode: 'FI' },
+  { name: 'Yle Uutiset', category: 'news', url: 'https://yle.fi/uutiset', language: 'Suomi', languageLocal: 'soome', countryCode: 'FI' },
+  { name: 'Ilta-Sanomat', category: 'news', url: 'https://www.is.fi', language: 'Suomi', languageLocal: 'soome', countryCode: 'FI' },
+  { name: 'Iltalehti', category: 'news', url: 'https://www.iltalehti.fi', language: 'Suomi', languageLocal: 'soome', countryCode: 'FI' },
+  { name: 'Kauppalehti', category: 'business', url: 'https://www.kauppalehti.fi', language: 'Suomi', languageLocal: 'soome', countryCode: 'FI' },
+  { name: 'Turun Sanomat', category: 'news', url: 'https://www.ts.fi', language: 'Suomi', languageLocal: 'soome', countryCode: 'FI' },
+  
+  // News - Dutch (Nederlands)
+  { name: 'NOS', category: 'news', url: 'https://nos.nl', language: 'Nederlands', languageLocal: 'hollandi', countryCode: 'NL' },
+  { name: 'De Volkskrant', category: 'news', url: 'https://www.volkskrant.nl', language: 'Nederlands', languageLocal: 'hollandi', countryCode: 'NL' },
+  { name: 'NRC', category: 'news', url: 'https://www.nrc.nl', language: 'Nederlands', languageLocal: 'hollandi', countryCode: 'NL' },
+  { name: 'De Telegraaf', category: 'news', url: 'https://www.telegraaf.nl', language: 'Nederlands', languageLocal: 'hollandi', countryCode: 'NL' },
+  { name: 'Trouw', category: 'news', url: 'https://www.trouw.nl', language: 'Nederlands', languageLocal: 'hollandi', countryCode: 'NL' },
+  { name: 'Het Parool', category: 'news', url: 'https://www.parool.nl', language: 'Nederlands', languageLocal: 'hollandi', countryCode: 'NL' },
+  
+  // News - Polish (Polski)
   { name: 'Gazeta Wyborcza', category: 'news', url: 'https://wyborcza.pl', language: 'Polski', languageLocal: 'poola', countryCode: 'PL' },
-  // News - Portuguese
-  { name: 'Folha', category: 'news', url: 'https://www1.folha.uol.com.br', language: 'Português', languageLocal: 'portugali', countryCode: 'BR' },
-  // News - Spanish
-  { name: 'La Nacion', category: 'news', url: 'https://www.lanacion.com.ar', language: 'Español', languageLocal: 'hispaania', countryCode: 'AR' },
-  // News - Greenlandic
+  { name: 'Rzeczpospolita', category: 'news', url: 'https://www.rp.pl', language: 'Polski', languageLocal: 'poola', countryCode: 'PL' },
+  { name: 'Onet', category: 'news', url: 'https://wiadomosci.onet.pl', language: 'Polski', languageLocal: 'poola', countryCode: 'PL' },
+  { name: 'Fakt', category: 'news', url: 'https://www.fakt.pl', language: 'Polski', languageLocal: 'poola', countryCode: 'PL' },
+  { name: 'TVN24', category: 'news', url: 'https://tvn24.pl', language: 'Polski', languageLocal: 'poola', countryCode: 'PL' },
+  
+  // News - Portuguese (Português)
+  { name: 'Público', category: 'news', url: 'https://www.publico.pt', language: 'Português', languageLocal: 'portugali', countryCode: 'PT' },
+  { name: 'Expresso', category: 'news', url: 'https://expresso.pt', language: 'Português', languageLocal: 'portugali', countryCode: 'PT' },
+  { name: 'Jornal de Notícias', category: 'news', url: 'https://www.jn.pt', language: 'Português', languageLocal: 'portugali', countryCode: 'PT' },
+  { name: 'Observador', category: 'news', url: 'https://observador.pt', language: 'Português', languageLocal: 'portugali', countryCode: 'PT' },
+  { name: 'Folha de S.Paulo', category: 'news', url: 'https://www1.folha.uol.com.br', language: 'Português', languageLocal: 'portugali', countryCode: 'BR' },
+  { name: 'O Globo', category: 'news', url: 'https://oglobo.globo.com', language: 'Português', languageLocal: 'portugali', countryCode: 'BR' },
+  { name: 'Estado de S. Paulo', category: 'news', url: 'https://www.estadao.com.br', language: 'Português', languageLocal: 'portugali', countryCode: 'BR' },
+  
+  // News - Icelandic (Íslenska)
+  { name: 'RÚV', category: 'news', url: 'https://www.ruv.is/frett', language: 'Íslenska', languageLocal: 'islandi', countryCode: 'IS' },
+  { name: 'Morgunblaðið', category: 'news', url: 'https://www.mbl.is', language: 'Íslenska', languageLocal: 'islandi', countryCode: 'IS' },
+  { name: 'Fréttablaðið', category: 'news', url: 'https://www.frettabladid.is', language: 'Íslenska', languageLocal: 'islandi', countryCode: 'IS' },
+  { name: 'Vísir', category: 'news', url: 'https://www.visir.is', language: 'Íslenska', languageLocal: 'islandi', countryCode: 'IS' },
+  
+  // News - Latvian (Latviešu)
+  { name: 'Delfi Latvia', category: 'news', url: 'https://www.delfi.lv', language: 'Latviešu', languageLocal: 'läti', countryCode: 'LV' },
+  { name: 'Neatkarīgā', category: 'news', url: 'https://neatkariga.nra.lv', language: 'Latviešu', languageLocal: 'läti', countryCode: 'LV' },
+  { name: 'LSM.lv', category: 'news', url: 'https://www.lsm.lv', language: 'Latviešu', languageLocal: 'läti', countryCode: 'LV' },
+  { name: 'Apollo.lv', category: 'news', url: 'https://www.apollo.lv', language: 'Latviešu', languageLocal: 'läti', countryCode: 'LV' },
+  
+  // News - Lithuanian (Lietuvių)
+  { name: '15min', category: 'news', url: 'https://www.15min.lt', language: 'Lietuvių', languageLocal: 'leedu', countryCode: 'LT' },
+  { name: 'Delfi Lithuania', category: 'news', url: 'https://www.delfi.lt', language: 'Lietuvių', languageLocal: 'leedu', countryCode: 'LT' },
+  { name: 'LRT', category: 'news', url: 'https://www.lrt.lt', language: 'Lietuvių', languageLocal: 'leedu', countryCode: 'LT' },
+  { name: 'Bernardinai', category: 'news', url: 'https://www.bernardinai.lt', language: 'Lietuvių', languageLocal: 'leedu', countryCode: 'LT' },
+  
+  // News - Ukrainian (Українська)
+  { name: 'Ukrainska Pravda', category: 'politics', url: 'https://www.pravda.com.ua', language: 'Українська', languageLocal: 'ukraina', countryCode: 'UA' },
+  { name: 'Suspilne Novyny', category: 'politics', url: 'https://suspilne.media', language: 'Українська', languageLocal: 'ukraina', countryCode: 'UA' },
+  { name: 'LB.ua', category: 'news', url: 'https://lb.ua', language: 'Українська', languageLocal: 'ukraina', countryCode: 'UA' },
+  { name: 'Hromadske', category: 'news', url: 'https://hromadske.ua', language: 'Українська', languageLocal: 'ukraina', countryCode: 'UA' },
+  
+  // News - Arabic (العربية)
+  { name: 'Al Jazeera', category: 'news', url: 'https://www.aljazeera.net', language: 'العربية', languageLocal: 'araabia', countryCode: 'QA' },
+  { name: 'Al Arabiya', category: 'news', url: 'https://www.alarabiya.net', language: 'العربية', languageLocal: 'araabia', countryCode: 'SA' },
+  { name: 'BBC Arabic', category: 'news', url: 'https://www.bbc.com/arabic', language: 'العربية', languageLocal: 'araabia', countryCode: 'GB' },
+  
+  // News - Czech (Čeština)
+  { name: 'iDNES.cz', category: 'news', url: 'https://www.idnes.cz', language: 'Čeština', languageLocal: 'tšehhi', countryCode: 'CZ' },
+  { name: 'Aktuálně.cz', category: 'news', url: 'https://www.aktualne.cz', language: 'Čeština', languageLocal: 'tšehhi', countryCode: 'CZ' },
+  { name: 'Novinky.cz', category: 'news', url: 'https://www.novinky.cz', language: 'Čeština', languageLocal: 'tšehhi', countryCode: 'CZ' },
+  
+  // News - Greenlandic (Kalaallisut)
   { name: 'Sermitsiaq', category: 'news', url: 'https://sermitsiaq.ag', language: 'Kalaallisut', languageLocal: 'grööni', countryCode: 'GL' },
+  
   // Politics - English
   { name: 'Politico', category: 'politics', url: 'https://www.politico.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'Foreign Affairs', category: 'politics', url: 'https://www.foreignaffairs.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'The Kyiv Independent', category: 'politics', url: 'https://kyivindependent.com', language: 'English', languageLocal: 'inglise', countryCode: 'UA' },
-  // Politics - Ukrainian
-  { name: 'Suspilne Novyny', category: 'politics', url: 'https://suspilne.media', language: 'Українська', languageLocal: 'ukraina', countryCode: 'UA' },
+  
   // Business - English
   { name: 'Financial Times', category: 'business', url: 'https://www.ft.com', language: 'English', languageLocal: 'inglise', countryCode: 'GB' },
   { name: 'Bloomberg', category: 'business', url: 'https://www.bloomberg.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'Wall Street Journal', category: 'business', url: 'https://www.wsj.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'Forbes', category: 'business', url: 'https://www.forbes.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
+  
   // Tech - English
   { name: 'TechCrunch', category: 'tech', url: 'https://techcrunch.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'The Verge', category: 'tech', url: 'https://www.theverge.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'Wired', category: 'tech', url: 'https://www.wired.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'Ars Technica', category: 'tech', url: 'https://arstechnica.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
+  
   // Science - English
   { name: 'Nature', category: 'science', url: 'https://www.nature.com', language: 'English', languageLocal: 'inglise', countryCode: 'GB' },
   { name: 'Science', category: 'science', url: 'https://www.science.org', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'Scientific American', category: 'science', url: 'https://www.scientificamerican.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'New Scientist', category: 'science', url: 'https://www.newscientist.com', language: 'English', languageLocal: 'inglise', countryCode: 'GB' },
+  
   // Sports - English
   { name: 'ESPN', category: 'sports', url: 'https://www.espn.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'The Athletic', category: 'sports', url: 'https://theathletic.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'Sky Sports', category: 'sports', url: 'https://www.skysports.com', language: 'English', languageLocal: 'inglise', countryCode: 'GB' },
+  
   // Culture - English
   { name: 'Variety', category: 'culture', url: 'https://variety.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'Rolling Stone', category: 'culture', url: 'https://www.rollingstone.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'Pitchfork', category: 'culture', url: 'https://pitchfork.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'The Atlantic', category: 'culture', url: 'https://www.theatlantic.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
   { name: 'New Yorker', category: 'culture', url: 'https://www.newyorker.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
+  
   // Opinion - English
   { name: 'Vox', category: 'opinion', url: 'https://www.vox.com', language: 'English', languageLocal: 'inglise', countryCode: 'US' },
 ];
@@ -122,26 +238,25 @@ export default function Home() {
     <div className="min-h-screen bg-white font-mono pb-24">
       <header className="border-b-4 border-black">
         <div className="max-w-7xl mx-auto px-4 py-6">
-          <h1 className="text-5xl font-bold text-black tracking-tight flex items-center gap-3 flex-wrap">
-            <img src="/mu_logo_1024.png" alt="MU logo" className="w-12 h-12 object-contain" />
-            PAREMKLIKK
+          <h1 className="text-4xl md:text-5xl font-bold text-black mb-2">
+            PAREMKLIKK.EE
           </h1>
-          <p className="text-lg text-black mt-2">
-            Maailmauudised eesti keeles
-          </p>
-          <p className="text-sm text-gray-700 mt-1 border-t border-black pt-2">
-            Vabadus saada emakeelset infot reaalajas ühest kohast ja omal valikul → peab leppima toimetamata masintõlkega → loe ja telli, mida tahad.
+          <p className="text-lg text-black">
+            Maailma meedia, tõlgituna ja hõlpsasti kättesaadav
           </p>
         </div>
       </header>
 
-      {/* KEELERIBA - ÜLEVAL */}
-      <div className="border-b-4 border-black bg-white">
-        <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex gap-3 overflow-x-auto pb-2">
+      <main className="max-w-7xl mx-auto px-4 py-8">
+        {/* Language Filter - MITMES REAS */}
+        <div className="mb-8">
+          <h2 className="text-xl font-bold text-black mb-3 uppercase">
+            KEEL:
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2">
             <button
               onClick={() => setSelectedLanguage('all')}
-              className={`px-5 py-2 border-2 border-black font-bold text-sm tracking-wide transition-all whitespace-nowrap ${
+              className={`px-3 py-2 border-2 border-black font-bold text-xs transition-all ${
                 selectedLanguage === 'all'
                   ? 'bg-black text-white'
                   : 'bg-white text-black hover:bg-gray-100'
@@ -149,33 +264,34 @@ export default function Home() {
             >
               KÕIK KEELED
             </button>
-            {languages.map((lang) => (
+            {languages.map(lang => (
               <button
                 key={lang.id}
                 onClick={() => setSelectedLanguage(lang.id)}
-                className={`px-5 py-2 border-2 border-black font-bold text-sm tracking-wide transition-all whitespace-nowrap ${
+                className={`px-3 py-2 border-2 border-black font-bold text-xs transition-all ${
                   selectedLanguage === lang.id
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-gray-100'
                 }`}
               >
-                <span className="block">{lang.label}</span>
-                <span className="block text-xs opacity-70">[{lang.labelLocal}]</span>
+                <div>{lang.label}</div>
+                <div className="text-[10px] opacity-70">[{lang.labelLocal}]</div>
               </button>
             ))}
           </div>
         </div>
-      </div>
 
-      {/* KATEGOORIARIBA - ALLPOOL */}
-      <div className="border-b-4 border-black bg-white">
-        <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex gap-3 overflow-x-auto">
-            {categories.map((cat) => (
+        {/* Category Filter */}
+        <div className="mb-8">
+          <h2 className="text-xl font-bold text-black mb-3 uppercase">
+            KATEGOORIA:
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+            {categories.map(cat => (
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`px-5 py-2 border-2 border-black font-bold text-sm tracking-wide transition-all ${
+                className={`px-4 py-2 border-2 border-black font-bold text-sm transition-all ${
                   selectedCategory === cat.id
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-gray-100'
@@ -186,29 +302,36 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
 
-      <main className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredOutlets.map((outlet) => (
+        {/* Results Count */}
+        <div className="mb-4 pb-4 border-b-2 border-black">
+          <p className="text-sm font-bold text-black">
+            Näitan {filteredOutlets.length} väljaannet
+          </p>
+        </div>
+
+        {/* Outlets Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {filteredOutlets.map((outlet, index) => (
             <div
-              key={outlet.name}
-              className="border-3 border-black p-5 bg-white relative"
+              key={index}
+              className="border-3 border-black p-4 bg-white hover:bg-gray-50 transition-colors"
               style={{ borderWidth: '3px' }}
             >
-              {/* RIIGIKOOD - PAREM ÜLASERV */}
-              <div className="absolute top-3 right-3 text-sm font-bold text-black">
-                [{outlet.countryCode}]
+              <div className="mb-3">
+                <h3 className="text-lg font-bold text-black mb-1">
+                  {outlet.name}
+                </h3>
+                <div className="flex items-center gap-2 text-xs text-black">
+                  <span className="px-2 py-1 bg-black text-white font-bold">
+                    {outlet.language}
+                  </span>
+                  <span className="px-2 py-1 border border-black font-bold">
+                    {categories.find(c => c.id === outlet.category)?.label}
+                  </span>
+                </div>
               </div>
-
-              <h3 className="text-xl font-bold text-black uppercase tracking-tight pr-16">
-                {outlet.name}
-              </h3>
-              <p className="text-sm text-gray-700 mt-2 uppercase tracking-wide">
-                [{categories.find(c => c.id === outlet.category)?.label}]
-              </p>
-              
-              <div className="mt-4 flex gap-2">
+              <div className="flex gap-2">
                 <a
                   href={outlet.url}
                   target="_blank"
@@ -314,7 +437,7 @@ export default function Home() {
                 2. Parem-klikk lehel → vali «Tõlgi eesti keelde»
               </p>
               <p className="text-sm text-black mb-3">
-                VÕI klõpsa paremal üleval/mobiiltelefonis all kolme täppi → «Translate/Tõlgi» → vali eesti keel
+                VÕI klõpsa paremal üleval/mobiiltelefonis all kolme täppu → «Translate/Tõlgi» → vali eesti keel
               </p>
               <p className="text-sm text-black mb-3">
                 <strong>SAFARI:</strong><br />
