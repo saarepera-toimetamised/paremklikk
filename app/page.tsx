@@ -238,11 +238,15 @@ export default function Home() {
     <div className="min-h-screen bg-white font-mono pb-24">
       <header className="border-b-4 border-black">
         <div className="max-w-7xl mx-auto px-4 py-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-black mb-2">
-            PAREMKLIKK.EE
+          <h1 className="text-5xl font-bold text-black tracking-tight flex items-center gap-3 flex-wrap">
+            <img src="/mu_favicon_512.png" alt="MU logo" className="w-12 h-12 object-contain" />
+            PAREMKLIKK
           </h1>
-          <p className="text-lg text-black">
-            Maailma meedia, tõlgituna ja hõlpsasti kättesaadav
+          <p className="text-lg text-black mt-2">
+            Maailmauudised eesti keeles
+          </p>
+          <p className="text-sm text-gray-700 mt-1 border-t border-black pt-2">
+            Vabadus saada emakeelset infot reaalajas ühest kohast ja omal valikul → peab leppima toimetamata masintõlkega → loe ja telli, mida tahad.
           </p>
         </div>
       </header>
