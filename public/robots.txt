@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.paremklikk.ee
+
+# Sitemaps
+Sitemap: https://www.paremklikk.ee/sitemap.xml
