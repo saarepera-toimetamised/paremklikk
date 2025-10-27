@@ -14,10 +14,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Maailmauudised",
-  description: "paremklikk.ee",
+  title: "Paremklikk - Maailmauudised ja AI õpetus",
+  description: "Loe uudiseid erinevates keeltes, võrdle samu teemasid erineva kallakuga lehtedel. Faktikontroll, ajalehed ja AI õpetus eesti inimestele – kõik ühes kohas.",
   icons: {
     icon: "/mu_favicon.ico",
+  },
+  openGraph: {
+    title: "Paremklikk - Maailmauudised ja AI õpetus",
+    description: "Loe uudiseid erinevates keeltes, võrdle kallakuid, õpi AI-d kasutama",
+    url: "https://www.paremklikk.ee",
+    siteName: "Paremklikk",
+    locale: "et_EE",
+    type: "website",
   },
 };
 
