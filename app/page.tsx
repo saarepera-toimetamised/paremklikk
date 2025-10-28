@@ -451,7 +451,7 @@ export default function Home() {
                 <strong>Sa saad lugeda KÕIKI maailma väljaandeid eesti keeles</strong> - ka neid, mis pole meie nimekirjas. Lihtsalt mine lehele ja kasuta paremat hiireklõpsu!
               </p>
               <p className="text-sm text-black">
-                <strong>NB! Kui kasutad Comet brauserit,</strong> võid ülevalt AI assistendi avada ja emakeeles fakte kontrollida ja edasi küsides teemat arendada...
+                <strong>NB! Kui avad Comet brauseris,</strong> võid ülevalt AI assistendi avada ja emakeeles fakte kontrollida ja huvitavaid lugusid edasi uurida...
               </p>
             </div>
           </div>
