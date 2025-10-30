@@ -48,6 +48,13 @@ export default function RootLayout({
           async
           src="https://gc.zgo.at/count.js"
         />
+
+        {/* Cloudflare Web Analytics */}
+        <script 
+          defer 
+          src='https://static.cloudflareinsights.com/beacon.min.js' 
+          data-cf-beacon='{"token": "896532ddd4fa4d25813f9d157e3db763"}'
+        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
