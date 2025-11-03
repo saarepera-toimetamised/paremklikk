@@ -323,9 +323,14 @@ export default function Home() {
               style={{ borderWidth: '3px' }}
             >
               <div className="mb-3">
-                <h3 className="text-lg font-bold text-black mb-1">
-                  {outlet.name}
-                </h3>
+                <div className="flex items-start justify-between mb-1">
+                  <h3 className="text-lg font-bold text-black pr-2">
+                    {outlet.name}
+                  </h3>
+                  <span className="px-2 py-1 border-2 border-black font-bold text-xs flex-shrink-0 text-black bg-white">
+                    {outlet.countryCode}
+                  </span>
+                </div>
                 <div className="flex items-center gap-2 text-xs text-black">
                   <span className="px-2 py-1 bg-black text-white font-bold">
                     {outlet.language}
