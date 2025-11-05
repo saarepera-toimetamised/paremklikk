@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
   title: "Paremklikk - Maailmauudised ja AI õpetus",
-  description: "Loe uudiseid erinevates keeltes, võrdle kallakuid, õpi AI-d kasutama",
+  description: "Loe emakeeles maailmauudiseid, võrdle ja tee faktikontrolli - õpi AI-d kasutama",
   url: "https://www.paremklikk.ee",
   siteName: "Paremklikk",
   locale: "et_EE",
