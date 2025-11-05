@@ -36,10 +36,11 @@ export const metadata: Metadata = {
       url: '/mu_logo_1024.png',
       width: 1024,
       height: 1024,
-      alt: 'Paremklikk logo',
-    },
-  ],
-},
+       alt: 'Paremklikk logo',
+      },
+    ],
+  },
+}; 
 
 export default function RootLayout({
   children,
