@@ -25,14 +25,21 @@ export const metadata: Metadata = {
     canonical: 'https://www.paremklikk.ee',
   },
   openGraph: {
-    title: "Paremklikk - Maailmauudised ja AI õpetus",
-    description: "Loe uudiseid erinevates keeltes, võrdle kallakuid, õpi AI-d kasutama",
-    url: "https://www.paremklikk.ee",
-    siteName: "Paremklikk",
-    locale: "et_EE",
-    type: "website",
-  },
-};
+  title: "Paremklikk - Maailmauudised ja AI õpetus",
+  description: "Loe uudiseid erinevates keeltes, võrdle kallakuid, õpi AI-d kasutama",
+  url: "https://www.paremklikk.ee",
+  siteName: "Paremklikk",
+  locale: "et_EE",
+  type: "website",
+  images: [
+    {
+      url: '/mu_logo_1024.png',
+      width: 1024,
+      height: 1024,
+      alt: 'Paremklikk logo',
+    },
+  ],
+},
 
 export default function RootLayout({
   children,
