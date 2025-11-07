@@ -69,7 +69,7 @@ export default function SearchBar() {
               e.currentTarget.style.color = '#00ff00';
             }}
           >
-            [LEIA LIBRIS]
+            [LEIA LEHTI]
           </button>
         </form>
       </div>
