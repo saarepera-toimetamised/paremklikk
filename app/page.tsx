@@ -243,7 +243,7 @@ export default function Home() {
             PAREMKLIKK
           </h1>
           <p className="text-lg text-black mt-2">
-            Maailmauudised eesti keeles
+            Maailmauudised eesti keeles neile, kes tahavad suurt pilti ise kokku panna.
           </p>
           <p className="text-sm text-gray-700 mt-1 border-t border-black pt-2">
             Vabadus saada emakeelset infot reaalajas ühest kohast ja omal valikul → peab leppima toimetamata masintõlkega → loe ja telli, mida tahad.

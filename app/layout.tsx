@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.paremklikk.ee'),
-  title: "Paremklikk - Maailmauudised ja AI õpetus",
+  title: "Paremklikk - Maailmauudised ja AI suure pildi saamiseks",
   description: "Loe uudiseid erinevates keeltes, võrdle samu teemasid erineva kallakuga lehtedel. Faktikontroll, ajalehed ja AI õpetus eesti inimestele – kõik ühes kohas.",
   icons: {
     icon: "/mu_favicon.ico",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.paremklikk.ee',
   },
   openGraph: {
-  title: "Paremklikk - Maailmauudised ja AI õpetus",
+  title: "Paremklikk - Maailmauudised ja AI suure pildi saamiseks",
   description: "Loe emakeeles maailmauudiseid, võrdle ja tee faktikontrolli - harju AI-d kasutama",
   url: "https://www.paremklikk.ee",
   siteName: "Paremklikk",
