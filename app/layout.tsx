@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SearchBar from "./components/SearchBar";
+import CrossLinkFooter from './components/CrossLinkFooter';
 import { Analytics } from '@vercel/analytics/react';
 
 const geistSans = Geist({
@@ -67,6 +68,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <SearchBar />
+        <CrossLinkFooter />
         <Analytics />
       </body>
     </html>
