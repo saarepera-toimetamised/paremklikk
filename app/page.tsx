@@ -236,22 +236,73 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white font-mono pb-24">
-      <header className="border-b-4 border-black">
-        <div className="max-w-7xl mx-auto px-4 py-6">
-          <h1 className="text-5xl font-bold text-black tracking-tight flex items-center gap-3 flex-wrap">
-            <img src="/mu_favicon_512.png" alt="MU logo" className="w-12 h-12 object-contain" />
+  <header className="border-b-4 border-black">
+    <div className="max-w-7xl mx-auto px-4 py-6">
+    
+    {/* LOGO JA PEALKIRI (Lihtsustatud) */}
+    <div>
+        <h1 className="text-5xl font-bold text-black track">
+            <img src="/mu_favicon_512.png" alt="MU logo" className="inline-block h-10 w-10 mr-2" />
             PAREMKLIKK
-          </h1>
-          <p className="text-lg text-black mt-2">
-            Maailmauudised eesti keeles neile, kes tahavad suurt pilti ise kokku panna.
-          </p>
-          <p className="text-sm text-gray-700 mt-1 border-t border-black pt-2">
-            Vabadus saada emakeelset infot reaalajas ühest kohast ja omal valikul → peab leppima toimetamata masintõlkega → loe ja telli, mida tahad.
-          </p>
-        </div>
-      </header>
+        </h1>
+    </div>
+    
+    {/* VABADUSE TEKST */}
+    <p className="text-sm text-black mt-2 text-center">
+        Vabadus saada emakeelset infot reaalajas ühest kohast ja omal valikul → peab leppima toimetamata masintõlkega → loe ja telli, mida tahad.
+    </p>
+    
+</div>
+</header>
 
-      <main className="max-w-7xl mx-auto px-4 py-8">
+{/* 1. Nool ALLAPOOLE (Viib juhendi algusesse) */}
+<a 
+    href="#instruktsioonid-algus" 
+    style={{
+        position: 'fixed', 
+        top: '150px', 
+        right: '15px', 
+        zIndex: 9999, 
+        backgroundColor: 'black', 
+        color: 'white', 
+        width: '30px', 
+        height: '30px', 
+        lineHeight: '30px', 
+        textAlign: 'center', 
+        borderRadius: '4px', 
+        fontSize: '20px', 
+        textDecoration: 'none', 
+        boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)',
+        display: 'block' 
+    }}
+>
+    ↓
+</a>
+
+{/* 2. Nool ÜLESPOOLE (Viib lehe algusesse) */}
+<a 
+    href="#" // Viib lehe ülesossa
+    style={{
+        position: 'fixed', 
+        top: '100px', // Kõrgemal kui allapoole keriv nool (150px)
+        right: '15px', 
+        zIndex: 9999, 
+        backgroundColor: 'black', 
+        color: 'white', 
+        width: '30px', 
+        height: '30px', 
+        lineHeight: '30px', 
+        textAlign: 'center', 
+        borderRadius: '4px', 
+        fontSize: '20px', 
+        textDecoration: 'none', 
+        boxShadow: '0 2px 5px rgba(0, 0, 0, 0.2)',
+        display: 'block' 
+    }}
+>
+    ↑
+</a>
+<main className="max-w-7xl mx-auto px-4 py-8">
         {/* Language Filter - MITMES REAS */}
         <div className="mb-8">
           <h2 className="text-xl font-bold text-black mb-3 uppercase">
@@ -365,7 +416,7 @@ export default function Home() {
 
       <footer className="border-t-4 border-black bg-white mt-16">
         <div className="max-w-7xl mx-auto px-4 py-8">
-          <div className="text-center mb-8 pb-8 border-b-2 border-black">
+          <div id="instruktsioonid-algus"className="text-center mb-8 pb-8 border-b-2 border-black">
             <p className="text-2xl font-bold text-black mb-2">
               Valik peab olema. Aru peab saama.
             </p>
