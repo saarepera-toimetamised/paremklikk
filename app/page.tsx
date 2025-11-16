@@ -507,7 +507,7 @@ export default function Home() {
                 <strong>Sa saad lugeda KÕIKI maailma väljaandeid eesti keeles</strong> - ka neid, mis pole meie nimekirjas. Lihtsalt mine lehele ja kasuta paremat hiireklõpsu!
               </p>
               <p className="text-sm text-black">
-                <strong>NB! Kui avad lehe Comet brauseris,</strong> võid ülevalt AI assistendi avada ja emakeeles fakte kontrollida ja huvitavaid lugusid edasi uurida...salvesta lehti järjehoidjatesse
+                <strong>NB! Kui avad lehe Comet brauseris,</strong> võid ülevalt <strong>AI assistendi</strong> avada ja emakeeles <strong>fakte kontrollida</strong> ja huvitavaid lugusid edasi uurida ja võrrelda...salvesta lehti järjehoidjatesse. Kui siit kataloogist ei leia, kasuta allservas otsingut. 
               </p>
             </div>
           </div>
