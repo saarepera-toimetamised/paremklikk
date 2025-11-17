@@ -247,6 +247,15 @@ export default function Home() {
         </h1>
     </div>
     
+    <div style={{ 
+  fontSize: 'clamp(15px, 3.5vw, 18px)',
+  marginTop: '30px', 
+  marginBottom: '12px',
+  color: '#000000'
+}}>
+  Maailmauudised eesti keeles
+</div>
+
     {/* VABADUSE TEKST */}
     <p className="text-sm text-black mt-2 text-center">
         Vabadus saada emakeelset infot reaalajas ühest kohast ja omal valikul → peab leppima toimetamata masintõlkega → loe ja telli, mida tahad.
