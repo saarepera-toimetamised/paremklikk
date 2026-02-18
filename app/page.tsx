@@ -429,9 +429,7 @@ export default function Home() {
             <p className="text-2xl font-bold text-black mb-2">
               Valik peab olema. Aru peab saama.
             </p>
-            <p className="text-sm text-black">
-              Küsimused: <a href="mailto:info@paremklikk.ee" className="underline">info@paremklikk.ee</a>
-            </p>
+            
             <p className="text-xs text-gray-600 mt-2">
               © paremklikk.ee
             </p>
